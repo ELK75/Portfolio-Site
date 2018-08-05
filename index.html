@@ -9,36 +9,44 @@
 </head>
 <body>
     <nav class="nav">
-        <ul class="nav__name">
-            <li>Elijah Kajinic</li>
-        </ul>
+        <div class="nav__screen-small">
+            <ul class="nav__name">
+                <li>Elijah Kajinic</li>
+            </ul>
+            <div class="nav__menu-wrapper">
+                <div class="nav__hamburger-menu"></div>
+            </div>
+        </div>
         <ul class="nav__items">
-            <li>
+            <li class="nav__item">              
                 <svg class="nav__icon">
                     <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
-                <span>Home</span>
+                <a href="#" class="nav__link">Home</a>
             </li>
-            <li>
+            <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="img/sprite.svg#icon-laptop"></use>
                 </svg>
-                <span>Projects</span>
+                <a href="#" class="nav__link">Projects</a>
             </li>
-            <li>
+            <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
-                <span>About Me</span>
+                <a href="#" class="nav__link">About Me</a>
             </li>
-            <li>
+            <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
-                <span>Contact</span>
+                <a href="#" class="nav__link">Contact</a>
             </li>
         </ul>
     </nav>
+    <hr>
+
+    <script src="/temp/scripts/App.js"></script>
 
 </body>
 </html>
