@@ -4,9 +4,12 @@
     padding: 2rem 5rem;
     display: flex;
     justify-content: space-between;
+    color: #fff; 
+    z-index: 9999;
+    position: relative;
 
     @include respond(phone) {
-        height: 7rem;
+        height: 6rem;
         transition: height .5s;
         display: block;
     }
@@ -16,7 +19,7 @@
     }
 
     &__name {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
     &__screen-small {
@@ -31,6 +34,7 @@
     }
 
     &__items {
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -46,7 +50,15 @@
     }
 
     &__height-fixed {
-        height: 27rem;
+        height: 24rem;
+
+        @include respond(small-phone) {
+            height: 32rem;
+        }
+
+        @include respond(xs-phone) {
+            height: 28rem;
+        }
     }
 
     &__menu-wrapper {
@@ -149,11 +161,19 @@
 
     &__link:link,
     &__link:visited {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         color: $color-primary;
         text-decoration: none;
 
         position: relative;
+
+        @include respond(small-phone) {
+            font-size: 3rem;
+        }
+
+        @include respond(xs-phone) {
+            font-size: 2.2rem;
+        }
     }
 
     &__icon {

@@ -1,7 +1,9 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/layout";
 
 @import "components/nav";
+@import "components/header";
