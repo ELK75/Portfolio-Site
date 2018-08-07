@@ -12,7 +12,7 @@
     background-color: rgba(241, 233, 233, 0.5);
 
     @include respond(tab-port) {
-        height: 11rem;
+        height: 10rem;
         transition: height .5s;
         display: block;
     }

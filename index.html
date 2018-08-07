@@ -20,15 +20,15 @@
                 </div>
             </div>
             <ul class="nav__items">
-                <a href="#" class="link nav__item" id="home">
-                    <li class="nav__item">              
+                <a href="#" class="link nav__item__link nav__item" id="home">
+                    <li>              
                         <svg class="nav__icon">
                             <use xlink:href="img/sprite.svg#icon-home"></use>
                         </svg>
                         Home
                     </li>
                 </a>
-                <a href="#" class="link nav__item" id="projects">
+                <a href="#" class="link nav__item__link nav__item" id="projects">
                     <li>
                         <svg class="nav__icon">
                             <use xlink:href="img/sprite.svg#icon-laptop"></use>
@@ -36,7 +36,7 @@
                         Projects
                     </li>
                 </a>
-                <a href="#" class="link nav__item" id="aboutMe">
+                <a href="#" class="link nav__item__link nav__item" id="aboutMe">
                     <li>
                         <svg class="nav__icon">
                             <use xlink:href="img/sprite.svg#icon-user"></use>
@@ -44,7 +44,7 @@
                         About Me
                     </li>
                 </a>
-                <a href="mailto:ELK75@pitt.edu" target="_top" class="link nav__item">
+                <a href="mailto:ELK75@pitt.edu" class="link nav__item">
                     <li>
                         <svg class="nav__icon">
                             <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -75,7 +75,7 @@
 
         <div class="gallery">
 
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000">
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75.github.io/travel-site/" target="_blank">
                     <img class="gallery__image" src="/img/ClearViewEscapes.jpg" alt="Cear View Escapes Website">
                 </a>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000">
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75.github.io/Trillo/" target="_blank">
                     <img class="gallery__image" src="/img/Trillo.jpg" alt="Trillo Website">
                 </a>    
@@ -103,7 +103,7 @@
                 </div>
             </div>
 
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000">
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75-yelp-camp.herokuapp.com/" target="_blank">
                     <img class="gallery__image" src="/img/YelpCamp.jpg" alt="YelpCamp Website">
                 </a>    
@@ -117,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000">
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75.github.io/Natours/" target="_blank">
                     <img class="gallery__image" src="/img/Natours.jpg" alt="Natours Website">
                 </a>    
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="-400" data-aos-duration="1000" ="300">
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
                 <a href="https://elk75.github.io/Nexter/" target="_blank">
                     <img class="gallery__image" src="/img/nexter.jpg" alt="nexter Website">
                 </a>    
@@ -146,16 +146,16 @@
             </div>
         </div>
 
-        <div id="aboutMeSection" class="about-me">
+        <div id="aboutMeSection" class="about-me" data-aos="slide-left" data-aos-offset="100" data-aos-duration="1000">
             <h2 class="heading-secondary">About Me</h2>
             <hr class-"u-width-100">
 
             <div class="about-me__content">
-                <div data-aos="slide-right" data-aos-offset="-100" data-aos-duration="1000" class="about-me__img-container">
+                <div class="about-me__img-container">
                     <img src="/img/about-me-photo.jpg" class="about-me__img" alt="Photo of me">
                 </div>
 
-                <div data-aos="slide-left" data-aos-offset="100" data-aos-duration="1000" class="about-me__text-content">
+                <div class="about-me__text-content">
                     <h2 class="heading-primary">Hello there!</h2>
                     <h3 class="heading-tertiary u-margin-top-small">I am a sophomore student at the University of Pittsburgh studying Computer Science. As a full-stack developer I can make your ideas a reality. I work with Node.js on the back-end but learning a new language is no problem for me.</h3>
                     <ul class="about-me__links u-margin-top-medium">
@@ -169,11 +169,11 @@
         </div>
     </main>
 
-    <footer data-aos="fade" data-aos-offset="-100" data-aos-duration="2000">
+    <footer data-aos="fade" data-aos-offset="-100" data-aos-duration="500">
         <div class="container footer footer__container">
             <h2 class="heading-secondary heading-secondary--white">Say Hello.</h2>
             <h4 class="heading-secondary heading-secondary--white u-margin-top-small">I am always on the lookout for new opportunities. If you like my work or wish to work on an awesome project I am all ears. Just send me a message below.</h4>
-            <a href="mailto:ELK75@pitt.edu" target="_top" class="btn btn__contact u-margin-top-large u-margin-bottom-large"><span>Get in Touch</span></a>
+            <a href="mailto:ELK75@pitt.edu" class="btn btn__contact u-margin-top-large u-margin-bottom-large"><span>Get in Touch</span></a>
         </div>
     </footer>
 

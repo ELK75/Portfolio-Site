@@ -1697,7 +1697,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 @media only screen and (max-width: 56.25em) {
   .nav {
-    height: 11rem;
+    height: 10rem;
     -webkit-transition: height .5s;
     transition: height .5s;
     display: block;
