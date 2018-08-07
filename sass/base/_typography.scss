@@ -1,4 +1,16 @@
-.heading-secondary {
-    font-size: 3rem;
-    font-weight: 300;
+.heading {
+
+    &-secondary {
+        font-size: 3rem;
+        font-weight: 300;
+
+        &--bold {
+            font-weight: 500;
+        }
+    }
+
+    &-tertiary {
+        font-size: 2rem;
+        font-weight: 300;
+    }
 }

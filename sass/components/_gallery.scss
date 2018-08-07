@@ -75,6 +75,12 @@
 			height: 4rem;
 			width: 4rem;
 			margin: 1rem 0;
+			
+			transition: transform .3s;
+		}
+
+		.gallery__github-link:hover {
+			transform: scale(1.1);
 		}
 	}
 }
