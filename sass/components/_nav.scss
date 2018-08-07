@@ -34,6 +34,7 @@
     }
 
     &__items {
+        animation: 1s ease-out 0s slideInFromRight;
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
@@ -126,7 +127,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        
+        cursor: pointer;
 
         &:not(:last-child) {
             margin-right: 2.5rem;
