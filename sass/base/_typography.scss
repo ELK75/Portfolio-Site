@@ -1,11 +1,24 @@
 .heading {
 
+    &-primary {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
     &-secondary {
         font-size: 3rem;
         font-weight: 300;
 
         &--bold {
             font-weight: 500;
+        }
+
+        &--white {
+            color: #fff;
+        }
+
+        &--color-primary {
+            color: $color-primary;
         }
     }
 

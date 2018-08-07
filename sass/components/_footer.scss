@@ -1,0 +1,13 @@
+.footer {
+    margin: 0 auto;
+    padding-bottom: 0;
+    text-align: center;
+
+    &__container {
+        max-width: 100rem;
+    }
+    
+    &__email {
+        font-size: 1.8rem;
+    }
+}

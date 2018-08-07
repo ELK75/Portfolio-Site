@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes slideInFromLeft {
   0% {
     -webkit-transform: translateX(-110%);
@@ -8,7 +9,6 @@
             transform: translateX(0);
   }
 }
-
 @keyframes slideInFromLeft {
   0% {
     -webkit-transform: translateX(-110%);
@@ -93,6 +93,21 @@ body {
   }
 }
 
+footer {
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right bottom, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari */
+  height: auto;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
 .heading-secondary {
   font-size: 3rem;
   font-weight: 300;
@@ -100,6 +115,14 @@ body {
 
 .heading-secondary--bold {
   font-weight: 500;
+}
+
+.heading-secondary--white {
+  color: #fff;
+}
+
+.heading-secondary--color-primary {
+  color: #FE7F85;
 }
 
 .heading-tertiary {
@@ -116,7 +139,15 @@ body {
 }
 
 .u-margin-top-large {
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 5rem;
+}
+
+.u-width-100 {
+  width: 100%;
 }
 
 .about-me {
@@ -176,6 +207,72 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.4rem;
+  display: inline-block;
+}
+
+.btn__contact {
+  border-radius: 4px;
+  background-color: none;
+  border: 2px solid #FE7F85;
+  padding: 2rem;
+  width: 22rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn__contact span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn__contact span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn__contact:hover {
+  background-color: #FE7F85;
+}
+
+.btn__contact:hover span {
+  padding-right: 2.5rem;
+}
+
+.btn__contact:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn__contact:link, .btn__contact:visited {
+  color: white;
+}
+
+.footer {
+  margin: 0 auto;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 100rem;
+}
+
+.footer__email {
+  font-size: 1.8rem;
 }
 
 .gallery {
@@ -396,7 +493,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 @media only screen and (max-width: 56.25em) {
   .nav {
-    height: 6rem;
+    height: 11rem;
     -webkit-transition: height .5s;
     transition: height .5s;
     display: block;
@@ -407,8 +504,40 @@ Remove or comment-out the code block below to see how the browser will fall-back
   list-style: none;
 }
 
-.nav__name {
+.nav__info {
   font-size: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 30em) {
+  .nav__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav__info .nav__name:after {
+  content: "\00a0";
+}
+
+@media only screen and (max-width: 30em) {
+  .nav__info .nav__name:after {
+    content: "";
+  }
+}
+
+.nav__info .nav__email:before {
+  content: "| ";
+}
+
+@media only screen and (max-width: 30em) {
+  .nav__info .nav__email:before {
+    content: "";
+  }
 }
 
 .nav__screen-small {
@@ -467,13 +596,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 @media only screen and (max-width: 56.25em) {
   .nav__height-fixed {
-    height: 26rem;
-  }
-}
-
-@media only screen and (max-width: 22.5em) {
-  .nav__height-fixed {
-    height: 28rem;
+    height: 30rem;
   }
 }
 
@@ -590,9 +713,5 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .projects__header {
-  width: 100%;
-}
-
-.projects__line-break {
   width: 100%;
 }

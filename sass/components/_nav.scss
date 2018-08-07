@@ -10,7 +10,7 @@
     position: relative;
 
     @include respond(tab-port) {
-        height: 6rem;
+        height: 11rem;
         transition: height .5s;
         display: block;
     }
@@ -19,8 +19,39 @@
         list-style: none;
     }
 
-    &__name {
+    &__info {
         font-size: 2.2rem;
+        display: flex;
+
+        @include respond(small-phone) {
+            flex-direction: column;
+        }
+
+        .nav__name {
+            &:after {
+                // inserts a space
+                content: "\00a0";
+            }
+
+            @include respond(small-phone) {
+                &:after {
+                    // inserts a space
+                    content: "";
+                }
+            }
+        }
+
+        .nav__email {
+            &:before {
+                content: "| ";
+            }
+
+            @include respond(small-phone) {
+                &:before {
+                    content: "";
+                }
+            }
+        }
     }
 
     &__screen-small {
@@ -54,11 +85,7 @@
         height: 24rem;
 
         @include respond(tab-port) {
-            height: 26rem;
-        }
-
-        @include respond(xs-phone) {
-            height: 28rem;
+            height: 30rem;
         }
     }
 

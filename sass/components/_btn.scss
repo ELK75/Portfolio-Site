@@ -1,0 +1,49 @@
+.btn {
+    text-align: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+    display: inline-block;
+
+    &__contact {
+        border-radius: 4px;
+        background-color: none;
+        border: 2px solid $color-primary;
+        padding: 2rem;
+        width: 22rem;
+        transition: all 0.5s;
+
+        & span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+
+            &:after {
+                content: '»';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -2rem;
+                transition: 0.5s;
+            }
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+        &:hover span {
+            padding-right: 2.5rem;
+
+            &:after {
+                opacity: 1;
+                right: 0;
+            }
+        }
+
+        &:link,
+        &:visited {
+            color: white;
+        }
+    }
+}
