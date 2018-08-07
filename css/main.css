@@ -171,45 +171,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.about-me__links .about-me__link {
-  position: relative;
-  margin-right: 1rem;
-}
-
-.about-me__links .about-me__link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FE7F85;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
-  transition: -webkit-transform 0.3s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
-}
-
-.about-me__links .about-me__link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.about-me__links .about-me__link:link, .about-me__links .about-me__link:visited {
-  font-size: 2.3rem;
-  color: #FE7F85;
-  text-decoration: none;
 }
 
 .gallery {
@@ -267,39 +233,6 @@ body {
   width: 4rem;
   margin: 1rem 0;
   cursor: pointer;
-}
-
-.gallery__description .gallery__link {
-  position: relative;
-}
-
-.gallery__description .gallery__link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FE7F85;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
-  transition: -webkit-transform 0.3s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s;
-  transition: transform 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
-}
-
-.gallery__description .gallery__link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.gallery__description .gallery__link:link, .gallery__description .gallery__link:visited {
-  font-size: 2.3rem;
-  color: #FE7F85;
-  text-decoration: none;
 }
 
 .gallery__description .gallery__github-link {
@@ -403,22 +336,65 @@ Remove or comment-out the code block below to see how the browser will fall-back
   }
 }
 
+.link {
+  position: relative;
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FE7F85;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out 0s;
+  transition: -webkit-transform 0.3s ease-in-out 0s;
+  transition: transform 0.3s ease-in-out 0s;
+  transition: transform 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
+}
+
+.link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.link:link, .link:visited {
+  font-size: 2.3rem;
+  color: #FE7F85;
+  text-decoration: none;
+}
+
+.link__nav {
+  font-size: 1.8rem;
+}
+
+.link__about-me {
+  margin-right: 1.5rem;
+}
+
 .nav {
   font-size: 1.7rem;
   overflow: hidden;
-  padding: 2rem 5rem;
+  padding: 4rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #fff;
   z-index: 9999;
   position: relative;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav {
     height: 6rem;
     -webkit-transition: height .5s;
@@ -445,7 +421,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
           align-items: center;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav__screen-small {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -457,7 +433,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .nav__items {
   -webkit-animation: 1s ease-out 0s slideInFromRight;
           animation: 1s ease-out 0s slideInFromRight;
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,11 +440,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -489,9 +465,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
   height: 24rem;
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 56.25em) {
   .nav__height-fixed {
-    height: 32rem;
+    height: 26rem;
   }
 }
 
@@ -505,7 +481,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   display: none;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav__menu-wrapper {
     height: 25px;
     cursor: pointer;
@@ -590,55 +566,15 @@ Remove or comment-out the code block below to see how the browser will fall-back
   margin-right: 2.5rem;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav__item:not(:last-child) {
     margin-right: 0;
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .nav__item {
     padding-top: 1.1rem;
-  }
-}
-
-.nav__item:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FE7F85;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav__item:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.nav__link:link, .nav__link:visited {
-  font-size: 1.8rem;
-  color: #FE7F85;
-  text-decoration: none;
-  position: relative;
-}
-
-@media only screen and (max-width: 30em) {
-  .nav__link:link, .nav__link:visited {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 22.5em) {
-  .nav__link:link, .nav__link:visited {
-    font-size: 2.2rem;
   }
 }
 

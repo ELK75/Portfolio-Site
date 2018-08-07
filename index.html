@@ -23,25 +23,25 @@
                     <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-home"></use>
                     </svg>
-                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="link">Home</a>
                 </li>
                 <li class="nav__item">
                     <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-laptop"></use>
                     </svg>
-                    <a href="#" class="nav__link">Projects</a>
+                    <a href="#" class="link">Projects</a>
                 </li>
                 <li class="nav__item">
                     <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-user"></use>
                     </svg>
-                    <a href="#" class="nav__link">About Me</a>
+                    <a href="#" class="link">About Me</a>
                 </li>
                 <li class="nav__item">
                     <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>
                     </svg>
-                    <a href="#" class="nav__link">Contact</a>
+                    <a href="#" class="link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -49,13 +49,14 @@
         <div class="header__img-container">
             <picture>
                 <source class="header__img" srcset="/img/header-small.jpg" media="(max-width: 48em)">
+                <source class="header__img" srcset="/img/header-medium.jpg" media="(max-width: 80em)">
                 <img class="header__img" srcset="/img/header-large.jpg" alt="Pittsburgh Skyline">
             </picture>
         </div>
 
         <div class="container header__text-block">
             <h1 class="header__text header__text--large">Hello.</h1>
-            <h2 class="header__text header__text--medium">My name is Elijah Kajinic. I am an aspiring full-stack developer from Pittsburgh.</h2>
+            <h2 class="header__text header__text--medium">My name is Elijah Kajinic. I am a full-stack developer from Pittsburgh.</h2>
         </div>
     </header>
 
@@ -70,7 +71,7 @@
                     <img class="gallery__image" src="/img/ClearViewEscapes.jpg" alt="Cear View Escapes Website">
                 </a>
                 <div class="gallery__description">
-                    <a href="https://elk75.github.io/travel-site/" class="gallery__link">Clear View</a>
+                    <a href="https://elk75.github.io/travel-site/" class="link">Clear View</a>
                     <a href="https://github.com/ELK75/travel-site" class="gallery__github-link">
                         <svg class="gallery__icon">
                             <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
@@ -84,7 +85,7 @@
                     <img class="gallery__image" src="/img/Trillo.jpg" alt="Trillo Website">
                 </a>    
                 <div class="gallery__description">
-                    <a href="https://elk75.github.io/Trillo/" class="gallery__link">Trillo</a>
+                    <a href="https://elk75.github.io/Trillo/" class="link">Trillo</a>
                     <a href="https://github.com/ELK75/Trillo" class="gallery__github-link">
                         <svg class="gallery__icon">
                             <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
@@ -98,7 +99,7 @@
                     <img class="gallery__image" src="/img/YelpCamp.jpg" alt="YelpCamp Website">
                 </a>    
                     <div class="gallery__description">
-                    <a href="https://elk75-yelp-camp.herokuapp.com/" class="gallery__link">YelpCamp</a>
+                    <a href="https://elk75-yelp-camp.herokuapp.com/" class="link">YelpCamp</a>
                     <a href="https://github.com/ELK75/YelpCamp" class="gallery__github-link">
                         <svg class="gallery__icon">
                             <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
@@ -112,7 +113,7 @@
                     <img class="gallery__image" src="/img/Natours.jpg" alt="Natours Website">
                 </a>    
                 <div class="gallery__description">
-                    <a href="https://elk75.github.io/Natours/" class="gallery__link">Natours</a>
+                    <a href="https://elk75.github.io/Natours/" class="link">Natours</a>
                     <a href="https://github.com/ELK75/Natours" class="gallery__github-link">
                         <svg class="gallery__icon">
                             <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
@@ -126,7 +127,7 @@
                     <img class="gallery__image" src="/img/nexter.jpg" alt="nexter Website">
                 </a>    
                 <div class="gallery__description">
-                    <a href="https://elk75.github.io/Nexter/" class="gallery__link">Nexter</a>
+                    <a href="https://elk75.github.io/Nexter/" class="link">Nexter</a>
                     <a href="https://github.com/ELK75/Nexter" class="gallery__github-link">
                         <svg class="gallery__icon">
                             <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
@@ -149,10 +150,10 @@
                     <h2 class="heading-secondary heading-secondary--bold">Hello there!</h2>
                     <h3 class="heading-tertiary u-margin-top-small">I am a sophomore student at the University of Pittsburgh studying Computer Science who is passionate about all things technology. As a full-stack developer I can make your ideas a reality. I work with Node.js on the back-end but learning a new language is no problem to me.</h3>
                     <ul class="about-me__links u-margin-top-medium">
-                        <li><a href="/files/Elijah-Kajinic-Resume.pdf" class="heading-tertiary about-me__link" download>Resume</a></li>
-                        <li><a href="/files/Elijah-Kajinic-Transcript.pdf" class="heading-tertiary about-me__link" download>Transcript</a></li>
-                        <li><a href="https://www.linkedin.com/in/elijah-kajinic/" class="heading-tertiary about-me__link">LinkedIn</a></li>
-                        <li><a href="https://github.com/ELK75" class="heading-tertiary about-me__link">Github</a></li>
+                        <li><a href="/files/Elijah-Kajinic-Resume.pdf" class="heading-tertiary link link__about-me" download>Resume</a></li>
+                        <li><a href="/files/Elijah-Kajinic-Transcript.pdf" class="heading-tertiary link link__about-me" download>Transcript</a></li>
+                        <li><a href="https://www.linkedin.com/in/elijah-kajinic/" class="heading-tertiary link link__about-me">LinkedIn</a></li>
+                        <li><a href="https://github.com/ELK75" class="heading-tertiary link link__about-me">Github</a></li>
                     </ul>
                 </div>
             </div>
