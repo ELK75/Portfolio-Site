@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     overflow: hidden;
 
@@ -9,7 +9,6 @@
         left: 0;
         top: 0;
         z-index: -1;
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
     &__img {
@@ -20,7 +19,7 @@
 
     &__text {
         font-weight: 300;
-        margin-top: 2rem;
+        margin-top: 3rem;
         color: #fff;
         max-width: 80rem;
 
@@ -35,7 +34,7 @@
 
         &--medium {
             animation: 1s ease-out 0s slideInFromLeft;
-            font-size: 4rem;
+            font-size: 5rem;
 
             @include respond(phone) {
                 font-size: 3rem;

@@ -1579,7 +1579,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -1589,8 +1589,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
 .header__img {
@@ -1601,7 +1599,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .header__text {
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: #fff;
   max-width: 80rem;
 }
@@ -1621,7 +1619,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .header__text--medium {
   -webkit-animation: 1s ease-out 0s slideInFromLeft;
           animation: 1s ease-out 0s slideInFromLeft;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
