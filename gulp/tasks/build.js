@@ -16,9 +16,13 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
     
     return gulp.src('./img/**/*')
         .pipe(gulp.dest('./docs/img'))
-})
+});
 
-gulp.task('usemin', ['deleteDistFolder'], function() {
+gulp.task('buildCSS', ['deleteDistFolder'], function() {
+    exec('npm run build:css');
+});
+
+gulp.task('usemin', ['buildCSS'], function() {
     return gulp.src("./index.html")
         .pipe(usemin({
             css: [function() {return rev()}, function() {return cssnano()}],
@@ -27,4 +31,4 @@ gulp.task('usemin', ['deleteDistFolder'], function() {
         .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder', 'usemin', 'copyGeneralFiles']);
+gulp.task('build', ['deleteDistFolder', 'buildCSS', 'usemin', 'copyGeneralFiles']);
