@@ -1791,6 +1791,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 @media only screen and (max-width: 56.25em) {
   .nav__items {
+    margin-top: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
