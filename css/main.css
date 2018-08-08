@@ -1579,7 +1579,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .header {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -1597,11 +1597,24 @@ Remove or comment-out the code block below to see how the browser will fall-back
   width: 100vw;
 }
 
+.header__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 10rem auto;
+}
+
 .header__text {
   font-weight: 300;
   margin-top: 3rem;
   color: #fff;
-  max-width: 80rem;
 }
 
 .header__text--large {
