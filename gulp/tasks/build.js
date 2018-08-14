@@ -11,7 +11,7 @@ gulp.task('deleteDistFolder', function() {
 });
 
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
-    gulp.src('./files')
+    gulp.src('./files/**/*')
         .pipe(gulp.dest('./docs/files'));
     
     return gulp.src('./img/**/*')
