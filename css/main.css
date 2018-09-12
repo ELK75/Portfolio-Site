@@ -1464,6 +1464,14 @@ footer {
   color: white;
 }
 
+.class-projects {
+  margin: 0 auto;
+}
+
+.class-projects__header {
+  width: 100%;
+}
+
 .footer {
   margin: 0 auto;
   padding-bottom: 0;
@@ -1490,10 +1498,10 @@ footer {
 }
 
 .gallery__item {
-  /* Minimum width of 24rem and grow to fit available space */
   -webkit-box-flex: 0;
       -ms-flex: 0 0 24rem;
           flex: 0 0 24rem;
+  max-width: 24rem;
   /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
   margin: 1rem;
   -webkit-box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -1922,12 +1930,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
   width: 2rem;
   margin-right: 1rem;
   fill: #FE7F85;
-}
-
-.projects {
-  margin: 0 auto;
-}
-
-.projects__header {
-  width: 100%;
 }
