@@ -11,7 +11,7 @@
     
     background-color: rgba(255, 255, 255, 0.8);
 
-    @include respond(tab-port) {
+    @include respond(screen-md) {
         height: 9rem;
         transition: height .5s;
         display: block;
@@ -25,7 +25,7 @@
         font-size: 2.2rem;
         display: flex;
 
-        @include respond(tab-port) {
+        @include respond(screen-md) {
             flex-direction: column;
         }
 
@@ -61,7 +61,7 @@
         display: flex;
         align-items: center;
 
-        @include respond(tab-port) {
+        @include respond(screen-md) {
             justify-content: space-between;
             width: 100%;
         }
@@ -73,7 +73,7 @@
         flex-direction: row;
         align-items: center;
     
-        @include respond(tab-port) {
+        @include respond(screen-md) {
             margin-top: 1.5rem;
             flex-direction: column;
             align-items: center;
@@ -87,8 +87,8 @@
     &__height-fixed {
         height: 24rem;
 
-        @include respond(tab-port) {
-            height: 30rem;
+        @include respond(screen-md) {
+            height: 34rem;
         }
     }
 
@@ -96,7 +96,7 @@
 
         display: none;
 
-        @include respond(tab-port) {
+        @include respond(screen-md) {
             height: $hamburger-bar-height + $hamburger-bar-spacing*2;
             cursor: pointer;
             display: inline-block;
@@ -162,12 +162,12 @@
         &:not(:last-child) {
             margin-right: 2.5rem;
 
-            @include respond(tab-port) {
+            @include respond(screen-md) {
                 margin-right: 0;
             }
         }
 
-        @include respond(tab-port) {
+        @include respond(screen-md) {
             padding-top: 1.1rem;
         }
     }

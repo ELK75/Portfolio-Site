@@ -6,12 +6,13 @@ Add react and redux project -->
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="img/site-favicon.jpg">
     <title>Elijah Kajinic | Full-stack Developer</title>
 
-    <link rel="stylesheet" href="css/style-e4cf0736fa.css" media="screen"/>
+    <link rel="stylesheet" href="css/style-cc8be55e75.css" media="screen"/>
 </head>
 <body>
     <header id="homeSection" class="header">
@@ -32,6 +33,12 @@ Add react and redux project -->
                             <use xlink:href="img/sprite.svg#icon-home"></use>
                         </svg>
                         Home
+                    </li>
+                </a>
+                <a href="#" class="link nav__item__link nav__item" id="professionalExperience">
+                    <li>
+                        <img src="img/SVG/suitcase.svg" class="nav__icon"></img>
+                        Work
                     </li>
                 </a>
                 <a href="#" class="link nav__item__link nav__item" id="classProjects">
@@ -61,29 +68,46 @@ Add react and redux project -->
             </ul>
         </nav>
 
-        <div class="header__img-container">
-            <picture>
-                <source class="header__img" srcset="img/header-small.jpg" media="(max-width: 48em)">
-                <source class="header__img" srcset="img/header-medium.jpg" media="(max-width: 80em)">
-                <img class="header__img" srcset="img/header-large.jpg" alt="Pittsburgh Skyline">
-            </picture>
-        </div>
-
         <div class="container header__text-block u-margin-top-xl">
-            <h1 class="header__text header__text--large">Elijah Kajinic</h1>
-            <h2 class="header__text header__text--medium">Full-Stack Developer</h2>
+            <h1 class="header__text header__text--large">Hello There.</h1>
+            <h2 class="header__text header__text--medium">
+                My name is <span class="highlight">Elijah Kajinic.</span>
+                I am a 3rd Year Computer Science student at the <span class="highlight">University of Pittsburgh.</span>
+            </h2>
         </div>
     </header>
 
-    <main class="container class-projects" id="classProjectsSection">
-        <h2 class="heading-secondary class-projects__header">Projects from Online Courses</h2>
+    <main class="container class-projects" id="professionalExperienceSection">
+        <div id="professionalSection" class="about-me" data-aos="slide-left" data-aos-offset="0" data-aos-duration="1000">
+            <h2 class="heading-secondary">Professional Experience (Summer 2019)</h2>
+            <hr class="u-width-100">
+            <div class="about-me__content work">
+                <div class="work__container">
+                    <img src="img/internship-photo-team.jpeg" class="u-width-100 work__img-main" alt="Photo of me">
+                    <img src="img/internship-photo.jpg" class="u-width-100 work__img-secondary" alt="Photo of me">
+                </div>
+                <div class="about-me__text-content">
+                    <h2 class="heading-primary">My time at <span class="highlight">Honeywell.</span></h2>
+                    <h3 class="u-font-medium u-margin-top-small">
+                        At Honeywell I worked in both <span class="highlight">Full-Stack Web Development</span>
+                        and <span class="highlight">Test Automation</span> where I utilized 
+                        <span class="highlight">Javascript, Python, </span> and <span class="highlight">MySQL.</span>
+                        I learned a lot and worked with some great people.
+                    </h3>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <h2 class="heading-secondary class-projects__header u-margin-top-medium" id="classProjectsSection">Projects from Online Courses</h2>
         <hr class="u-width-100">
 
         <div class="gallery">
 
             <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75.github.io/travel-site/" target="_blank">
-                    <img class="gallery__image" src="img/ClearViewEscapes.jpg" alt="Cear View Escapes Website">
+                    <img class="gallery__image" src="img/ClearViewEscapes.jpg" alt="Clear View Escapes Website">
                 </a>
                 <div class="gallery__description">
                     <a href="https://elk75.github.io/travel-site/" class="link" target="_blank">Clear View</a>
@@ -183,8 +207,11 @@ Add react and redux project -->
                 </div>
 
                 <div class="about-me__text-content">
-                    <h2 class="heading-primary">Hello there!</h2>
-                    <h3 class="heading-tertiary u-margin-top-small">I am a sophomore student at the University of Pittsburgh studying Computer Science. As a full-stack developer I can make your ideas a reality. I work with Node.js on the back-end but learning a new language is no problem for me.</h3>
+                    <h2 class="heading-primary">Hello again.</h2>
+                    <h3 class="heading-tertiary u-margin-top-small">
+                        My name is Elijah Kajinic. I am a 3rd year student at the University of Pittsburgh who loves to work with all things technology.
+                        Learn more about me through the links below.
+                    </h3>
                     <ul class="about-me__links u-margin-top-medium">
                         <li><a href="files/Elijah-Kajinic-Resume.pdf" class="heading-tertiary link link__about-me" download>Resume</a></li>
                         <li><a href="files/Elijah-Kajinic-Transcript.pdf" class="heading-tertiary link link__about-me" download>Transcript</a></li>
@@ -199,7 +226,7 @@ Add react and redux project -->
     <footer data-aos="fade" data-aos-offset="-100" data-aos-duration="500">
         <div class="container footer footer__container">
             <h2 class="heading-secondary heading-secondary--white">Say Hello.</h2>
-            <h4 class="heading-secondary heading-secondary--white u-margin-top-small">I am always on the lookout for new opportunities. If you like my work or wish to work on an awesome project I am all ears. Just send me a message below.</h4>
+            <h4 class="heading-secondary heading-secondary--white u-margin-top-small">I am always on the lookout for new opportunities. Just send me a message below.</h4>
             <a href="mailto:ELK75@pitt.edu" class="btn btn__contact u-margin-top-large u-margin-bottom-large"><span>Get in Touch</span></a>
         </div>
     </footer>
