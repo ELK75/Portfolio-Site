@@ -17,211 +17,213 @@ Add react and redux project -->
     <!-- endbuild -->
 </head>
 <body>
-    <header id="homeSection" class="header">
-        <nav class="nav">
-            <div class="nav__screen-small">
-                <ul class="nav__info">
-                    <li class="nav__name">Elijah Kajinic</li>
-                    <li class="nav__email">ELK75@pitt.edu</li>
-                </ul>
-                <div class="nav__menu-wrapper">
-                    <div class="nav__hamburger-menu"></div>
-                </div>
-            </div>
-            <ul class="nav__items">
-                <a href="#" class="link nav__item__link nav__item" id="home">
-                    <li>              
-                        <svg class="nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-home"></use>
-                        </svg>
-                        Home
-                    </li>
-                </a>
-                <a href="#" class="link nav__item__link nav__item" id="professionalExperience">
-                    <li>
-                        <img src="img/SVG/suitcase.svg" class="nav__icon"></img>
-                        Work
-                    </li>
-                </a>
-                <a href="#" class="link nav__item__link nav__item" id="classProjects">
-                    <li>
-                        <svg class="nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-laptop"></use>
-                        </svg>
-                        Projects
-                    </li>
-                </a>
-                <a href="#" class="link nav__item__link nav__item" id="aboutMe">
-                    <li>
-                        <svg class="nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                        About Me
-                    </li>
-                </a>
-                <a href="mailto:ELK75@pitt.edu" class="link nav__item">
-                    <li>
-                        <svg class="nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-mail"></use>
-                        </svg>
-                        Contact
-                    </li>
-                </a>
-            </ul>
-        </nav>
-
-        <div class="container header__text-block u-margin-top-xl">
-            <h1 class="header__text header__text--large">Hello.</h1>
-            <h2 class="header__text header__text--medium">
-                My name is <span class="highlight">Elijah Kajinic.</span>
-                I am a 3rd Year Computer Science student at the <span class="highlight">University of Pittsburgh.</span>
-            </h2>
-        </div>
-    </header>
-
-    <main class="container class-projects" id="professionalExperienceSection">
-        <div id="professionalSection" class="about-me" data-aos="slide-left" data-aos-offset="0" data-aos-duration="1000">
-            <h2 class="heading-secondary">Professional Experience (Summer 2019)</h2>
-            <hr class="u-width-100">
-            <div class="about-me__content work">
-                <div class="work__container">
-                    <img src="img/internship-photo-team.jpeg" class="u-width-100 work__img-main" alt="Photo of me">
-                    <img src="img/internship-photo.jpg" class="u-width-100 work__img-secondary" alt="Photo of me">
-                </div>
-                <div class="about-me__text-content">
-                    <h2 class="heading-primary">My time at <span class="highlight">Honeywell.</span></h2>
-                    <h3 class="u-font-medium u-margin-top-small">
-                        At Honeywell I worked in both <span class="highlight">Full-Stack Web Development</span>
-                        and <span class="highlight">Test Automation</span> where I utilized 
-                        <span class="highlight">Javascript, Python, </span> and <span class="highlight">MySQL.</span>
-                        I learned a lot and worked with some great people.
-                    </h3>
-                </div>
-
-            </div>
-        </div>
-
-        <h2 class="heading-secondary class-projects__header u-margin-top-medium" id="classProjectsSection">Personal Projects</h2>
-        <hr class="u-width-100">
-
-        <div class="gallery">
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
-                <a href="https://crypto-track.herokuapp.com/" target="_blank">
-                    <img class="gallery__image" src="img/Crypto-Track.jpg" alt="Cryptocurrency Tracker Website">
-                </a>    
-                <div class="gallery__description">
-                    <a href="https://crypto-track.herokuapp.com/" class="link" target="_blank">Crypto-Track</a>
-                    <a href="https://github.com/ELK75/Crypto_Tracker" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-                <a href="https://elk75.github.io/travel-site/" target="_blank">
-                    <img class="gallery__image" src="img/ClearViewEscapes.jpg" alt="Clear View Escapes Website">
-                </a>
-                <div class="gallery__description">
-                    <a href="https://elk75.github.io/travel-site/" class="link" target="_blank">Clear View</a>
-                    <a href="https://github.com/ELK75/travel-site" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-                <a href="https://elk75.github.io/Trillo/" target="_blank">
-                    <img class="gallery__image" src="img/Trillo.jpg" alt="Trillo Website">
-                </a>    
-                <div class="gallery__description">
-                    <a href="https://elk75.github.io/Trillo/" class="link" target="_blank">Trillo</a>
-                    <a href="https://github.com/ELK75/Trillo" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-                <a href="https://elk75-yelp-camp.herokuapp.com/" target="_blank">
-                    <img class="gallery__image" src="img/YelpCamp.jpg" alt="YelpCamp Website">
-                </a>    
-                    <div class="gallery__description">
-                    <a href="https://elk75-yelp-camp.herokuapp.com/" class="link" target="_blank">YelpCamp</a>
-                    <a href="https://github.com/ELK75/YelpCamp" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
-                <a href="https://elk75.github.io/Natours/" target="_blank">
-                    <img class="gallery__image" src="img/Natours.jpg" alt="Natours Website">
-                </a>    
-                <div class="gallery__description">
-                    <a href="https://elk75.github.io/Natours/" class="link" target="_blank">Natours</a>
-                    <a href="https://github.com/ELK75/Natours" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
-                <a href="https://elk75.github.io/Nexter/" target="_blank">
-                    <img class="gallery__image" src="img/nexter.jpg" alt="nexter Website">
-                </a>    
-                <div class="gallery__description">
-                    <a href="https://elk75.github.io/Nexter/" class="link" target="_blank">Nexter</a>
-                    <a href="https://github.com/ELK75/Nexter" class="gallery__github-link" target="_blank">
-                        <svg class="gallery__icon">
-                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div id="aboutMeSection" class="about-me" data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000">
-            <h2 class="heading-secondary">About Me</h2>
-            <hr class="u-width-100">
-
-            <div class="about-me__content">
-                <div class="about-me__img-container">
-                    <img src="img/about-me-photo.jpg" class="about-me__img" alt="Photo of me">
-                </div>
-
-                <div class="about-me__text-content">
-                    <h2 class="heading-primary">Hello again.</h2>
-                    <h3 class="heading-tertiary u-margin-top-small">
-                        My name is Elijah Kajinic. I am a 3rd year student at the University of Pittsburgh who loves to work with all things technology.
-                        Learn more about me through the links below.
-                    </h3>
-                    <ul class="about-me__links u-margin-top-medium">
-                        <li><a href="files/Elijah-Kajinic-Resume.pdf" class="heading-tertiary link link__about-me" download>Resume</a></li>
-                        <li><a href="files/Elijah-Kajinic-Transcript.pdf" class="heading-tertiary link link__about-me" download>Transcript</a></li>
-                        <li><a href="https://www.linkedin.com/in/elijah-kajinic/" class="heading-tertiary link link__about-me" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/ELK75" class="heading-tertiary link link__about-me" target="_blank">Github</a></li>
+    <div class="site-wrapper">
+        <header id="homeSection" class="header">
+                <nav class="nav">
+                    <div class="nav__screen-small">
+                        <ul class="nav__info">
+                            <li class="nav__name">Elijah Kajinic</li>
+                            <li class="nav__email">ELK75@pitt.edu</li>
+                        </ul>
+                        <div class="nav__menu-wrapper">
+                            <div class="nav__hamburger-menu"></div>
+                        </div>
+                    </div>
+                    <ul class="nav__items">
+                        <a href="#" class="link nav__item__link nav__item" id="home">
+                            <li>              
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                Home
+                            </li>
+                        </a>
+                        <a href="#" class="link nav__item__link nav__item" id="professionalExperience">
+                            <li>
+                                <img src="img/SVG/suitcase.svg" class="nav__icon"></img>
+                                Work
+                            </li>
+                        </a>
+                        <a href="#" class="link nav__item__link nav__item" id="classProjects">
+                            <li>
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-laptop"></use>
+                                </svg>
+                                Projects
+                            </li>
+                        </a>
+                        <a href="#" class="link nav__item__link nav__item" id="aboutMe">
+                            <li>
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                                </svg>
+                                About Me
+                            </li>
+                        </a>
+                        <a href="mailto:ELK75@pitt.edu" class="link nav__item">
+                            <li>
+                                <svg class="nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                Contact
+                            </li>
+                        </a>
                     </ul>
+                </nav>
+        
+                <div class="container header__text-block u-margin-top-xl">
+                    <h1 class="header__text header__text--large">Hello.</h1>
+                    <h2 class="header__text header__text--medium">
+                        My name is <span class="highlight">Elijah Kajinic.</span>
+                        I am a 3rd Year Computer Science student at the <span class="highlight">University of Pittsburgh.</span>
+                    </h2>
                 </div>
-            </div>
-        </div>
-    </main>
-
-    <footer data-aos="fade" data-aos-offset="-100" data-aos-duration="500">
-        <div class="container footer footer__container">
-            <h2 class="heading-secondary heading-secondary--white">Say Hello.</h2>
-            <h4 class="heading-secondary heading-secondary--white u-margin-top-small">I am always on the lookout for new opportunities. Just send me a message below.</h4>
-            <a href="mailto:ELK75@pitt.edu" class="btn btn__contact u-margin-top-large u-margin-bottom-large"><span>Get in Touch</span></a>
-        </div>
-    </footer>
+            </header>
+        
+            <main class="container class-projects" id="professionalExperienceSection">
+                <div id="professionalSection" class="about-me" data-aos="slide-left" data-aos-offset="0" data-aos-duration="1000">
+                    <h2 class="heading-secondary">Professional Experience (Summer 2019)</h2>
+                    <hr class="u-width-100">
+                    <div class="about-me__content work">
+                        <div class="work__container">
+                            <img src="img/internship-photo-team.jpeg" class="u-width-100 work__img-main" alt="Photo of me">
+                            <img src="img/internship-photo.jpg" class="u-width-100 work__img-secondary" alt="Photo of me">
+                        </div>
+                        <div class="about-me__text-content">
+                            <h2 class="heading-primary">My time at <span class="highlight">Honeywell.</span></h2>
+                            <h3 class="u-font-medium u-margin-top-small">
+                                At Honeywell I worked in both <span class="highlight">Full-Stack Web Development</span>
+                                and <span class="highlight">Test Automation</span> where I utilized 
+                                <span class="highlight">Javascript, Python, </span> and <span class="highlight">MySQL.</span>
+                                I learned a lot and worked with some great people.
+                            </h3>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <h2 class="heading-secondary class-projects__header u-margin-top-medium" id="classProjectsSection">Personal Projects</h2>
+                <hr class="u-width-100">
+        
+                <div class="gallery">
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
+                        <a href="https://crypto-track.herokuapp.com/" target="_blank">
+                            <img class="gallery__image" src="img/Crypto-Track.jpg" alt="Cryptocurrency Tracker Website">
+                        </a>    
+                        <div class="gallery__description">
+                            <a href="https://crypto-track.herokuapp.com/" class="link" target="_blank">Crypto-Track</a>
+                            <a href="https://github.com/ELK75/Crypto_Tracker" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+                        <a href="https://elk75.github.io/travel-site/" target="_blank">
+                            <img class="gallery__image" src="img/ClearViewEscapes.jpg" alt="Clear View Escapes Website">
+                        </a>
+                        <div class="gallery__description">
+                            <a href="https://elk75.github.io/travel-site/" class="link" target="_blank">Clear View</a>
+                            <a href="https://github.com/ELK75/travel-site" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+                        <a href="https://elk75.github.io/Trillo/" target="_blank">
+                            <img class="gallery__image" src="img/Trillo.jpg" alt="Trillo Website">
+                        </a>    
+                        <div class="gallery__description">
+                            <a href="https://elk75.github.io/Trillo/" class="link" target="_blank">Trillo</a>
+                            <a href="https://github.com/ELK75/Trillo" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+                        <a href="https://elk75-yelp-camp.herokuapp.com/" target="_blank">
+                            <img class="gallery__image" src="img/YelpCamp.jpg" alt="YelpCamp Website">
+                        </a>    
+                            <div class="gallery__description">
+                            <a href="https://elk75-yelp-camp.herokuapp.com/" class="link" target="_blank">YelpCamp</a>
+                            <a href="https://github.com/ELK75/YelpCamp" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+                        <a href="https://elk75.github.io/Natours/" target="_blank">
+                            <img class="gallery__image" src="img/Natours.jpg" alt="Natours Website">
+                        </a>    
+                        <div class="gallery__description">
+                            <a href="https://elk75.github.io/Natours/" class="link" target="_blank">Natours</a>
+                            <a href="https://github.com/ELK75/Natours" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
+                        <a href="https://elk75.github.io/Nexter/" target="_blank">
+                            <img class="gallery__image" src="img/nexter.jpg" alt="nexter Website">
+                        </a>    
+                        <div class="gallery__description">
+                            <a href="https://elk75.github.io/Nexter/" class="link" target="_blank">Nexter</a>
+                            <a href="https://github.com/ELK75/Nexter" class="gallery__github-link" target="_blank">
+                                <svg class="gallery__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="aboutMeSection" class="about-me" data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000">
+                    <h2 class="heading-secondary">About Me</h2>
+                    <hr class="u-width-100">
+        
+                    <div class="about-me__content">
+                        <div class="about-me__img-container">
+                            <img src="img/about-me-photo.jpg" class="about-me__img" alt="Photo of me">
+                        </div>
+        
+                        <div class="about-me__text-content">
+                            <h2 class="heading-primary">Hello again.</h2>
+                            <h3 class="heading-tertiary u-margin-top-small">
+                                My name is Elijah Kajinic. I am a 3rd year student at the University of Pittsburgh who loves to work with all things technology.
+                                Learn more about me through the links below.
+                            </h3>
+                            <ul class="about-me__links u-margin-top-medium">
+                                <li><a href="files/Elijah-Kajinic-Resume.pdf" class="heading-tertiary link link__about-me" download>Resume</a></li>
+                                <li><a href="files/Elijah-Kajinic-Transcript.pdf" class="heading-tertiary link link__about-me" download>Transcript</a></li>
+                                <li><a href="https://www.linkedin.com/in/elijah-kajinic/" class="heading-tertiary link link__about-me" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://github.com/ELK75" class="heading-tertiary link link__about-me" target="_blank">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <footer data-aos="fade" data-aos-offset="-100" data-aos-duration="500">
+                <div class="container footer footer__container">
+                    <h2 class="heading-secondary heading-secondary--white">Say Hello.</h2>
+                    <h4 class="heading-secondary heading-secondary--white u-margin-top-small">I am always on the lookout for new opportunities. Just send me a message below.</h4>
+                    <a href="mailto:ELK75@pitt.edu" class="btn btn__contact u-margin-top-large u-margin-bottom-large"><span>Get in Touch</span></a>
+                </div>
+            </footer>
+    </div>
 
     <!-- build:js scripts/App.js -->
     <script src="temp/scripts/App.js"></script>
