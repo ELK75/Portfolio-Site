@@ -5,3 +5,6 @@ import SmoothScroll from './modules/SmoothScroll';
 AOS.init({
     once: true
 })
+Hamburger();
+console.log('here');
+SmoothScroll();

@@ -3,7 +3,7 @@ import $ from 'jquery';
 module.export = function() {
     $(".nav__item__link").click(function(e) {
         var sectionID = e.currentTarget.id + "Section";
-
+        console.log(sectionID);
         $("html body").animate({
             scrollTop: $("#" + sectionID).offset().top - 60
         }, 500);
@@ -12,4 +12,4 @@ module.export = function() {
         $('.nav__items').removeClass('nav__height-auto');
         $('.nav').removeClass('nav__height-fixed');
     });
-}();
+};

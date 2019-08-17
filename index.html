@@ -10,7 +10,7 @@ Add react and redux project -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="img/site-favicon.jpg">
-    <title>Elijah Kajinic | Full-stack Developer</title>
+    <title>Elijah Kajinic | Portfolio</title>
 
     <!-- build:css css/style.css -->
     <link rel="stylesheet" type="text/css" media="screen" href="sass/main.css" />
@@ -71,7 +71,7 @@ Add react and redux project -->
         </nav>
 
         <div class="container header__text-block u-margin-top-xl">
-            <h1 class="header__text header__text--large">Hello There.</h1>
+            <h1 class="header__text header__text--large">Hello.</h1>
             <h2 class="header__text header__text--medium">
                 My name is <span class="highlight">Elijah Kajinic.</span>
                 I am a 3rd Year Computer Science student at the <span class="highlight">University of Pittsburgh.</span>
@@ -97,16 +97,27 @@ Add react and redux project -->
                         I learned a lot and worked with some great people.
                     </h3>
                 </div>
-                
 
             </div>
         </div>
 
-        <h2 class="heading-secondary class-projects__header u-margin-top-medium" id="classProjectsSection">Projects from Online Courses</h2>
+        <h2 class="heading-secondary class-projects__header u-margin-top-medium" id="classProjectsSection">Personal Projects</h2>
         <hr class="u-width-100">
 
         <div class="gallery">
-
+            <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
+                <a href="https://crypto-track.herokuapp.com/" target="_blank">
+                    <img class="gallery__image" src="img/Crypto-Track.jpg" alt="Cryptocurrency Tracker Website">
+                </a>    
+                <div class="gallery__description">
+                    <a href="https://crypto-track.herokuapp.com/" class="link" target="_blank">Crypto-Track</a>
+                    <a href="https://github.com/ELK75/Crypto_Tracker" class="gallery__github-link" target="_blank">
+                        <svg class="gallery__icon">
+                            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
             <div class="gallery__item" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                 <a href="https://elk75.github.io/travel-site/" target="_blank">
                     <img class="gallery__image" src="img/ClearViewEscapes.jpg" alt="Clear View Escapes Website">
@@ -178,27 +189,6 @@ Add react and redux project -->
             </div>
         </div>
 
-        <div id="reactAndReduxSection" class="react-projects u-margin-top-medium">
-            <h2 class="heading-secondary">React and Redux Projects</h2>
-            <hr class="u-width-100">
-
-            <div class="gallery">
-                <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000">
-                    <a href="https://crypto-track.herokuapp.com/" target="_blank">
-                        <img class="gallery__image" src="img/Crypto-Track.jpg" alt="Cryptocurrency Tracker Website">
-                    </a>    
-                    <div class="gallery__description">
-                        <a href="https://crypto-track.herokuapp.com/" class="link" target="_blank">Crypto-Track</a>
-                        <a href="https://github.com/ELK75/Crypto_Tracker" class="gallery__github-link" target="_blank">
-                            <svg class="gallery__icon">
-                                <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div id="aboutMeSection" class="about-me" data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000">
             <h2 class="heading-secondary">About Me</h2>
             <hr class="u-width-100">
@@ -234,7 +224,7 @@ Add react and redux project -->
     </footer>
 
     <!-- build:js scripts/App.js -->
-    <script src="/temp/scripts/App.js"></script>
+    <script src="temp/scripts/App.js"></script>
     <!-- endbuild -->
 </body>
 </html>
